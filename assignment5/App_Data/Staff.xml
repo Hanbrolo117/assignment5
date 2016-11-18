@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Staffs>
+  <userName>
+    Banana
+    <password>
+      12345 (this will have to be hashed later)
+    </password>
+  </userName>
+</Staffs>

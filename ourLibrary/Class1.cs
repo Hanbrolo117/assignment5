@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ourLibrary
 {
-    /* Example class
+    // Example class
      public class myMath 
      { 
 		public static long abs (long x) 
@@ -14,7 +14,8 @@ namespace ourLibrary
 			if (x >= 0) return (x); else return (-x); 
 		} 
 	 } 
-     */
+
+
     public class Class1
     {
     }

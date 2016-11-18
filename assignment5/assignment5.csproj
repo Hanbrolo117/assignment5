@@ -94,6 +94,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Member.xml" />
+    <Content Include="App_Data\Staff.xml" />
     <Content Include="Default.aspx" />
     <Content Include="Member.aspx" />
     <Content Include="packages.config" />
@@ -142,7 +144,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
