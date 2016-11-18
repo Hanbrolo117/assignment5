@@ -11,7 +11,7 @@ namespace assignment5
 {
 
 
-    public partial class Member
+    public partial class MemberLogin
     {
 
         /// <summary>
