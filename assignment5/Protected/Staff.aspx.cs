@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace assignment5
+namespace assignment5.Protected
 {
     public partial class Staff : System.Web.UI.Page
     {

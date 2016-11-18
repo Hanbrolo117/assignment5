@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace assignment5
+namespace assignment5.Protected
 {
 
 
