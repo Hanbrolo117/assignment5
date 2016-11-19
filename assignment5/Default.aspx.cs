@@ -11,7 +11,17 @@ namespace assignment5
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            this.signIn.subscribeToLoginButton(this.LoginHandler);
+            this.signIn.subscribeToRegisterButton(this.RegisterHandler);
+        }
+
+        public void LoginHandler(string username, string password, EventArgs e) {
+            this.lor.Text = string.Format("Logged in! username: {0} | password: {1}", username, password);
+        }
+
+        public void RegisterHandler(string username, string password, EventArgs e)
+        {
+            this.lor.Text = string.Format("Registering! username: {0} | password: {1}", username, password);
         }
     }
 }
