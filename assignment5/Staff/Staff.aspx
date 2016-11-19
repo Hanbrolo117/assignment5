@@ -12,9 +12,9 @@
     
         <asp:Label ID="Label1" runat="server" Text="Staff user list:"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox1" runat="server" Height="146px" ReadOnly="True" TextMode="MultiLine" Width="116px"></asp:TextBox>
+        <asp:TextBox ID="txtStaffs" runat="server" Height="146px" ReadOnly="True" TextMode="MultiLine" Width="116px"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Button1" runat="server" Text="Add New Staff" />
+        <asp:Button ID="btnAddStaff" runat="server" OnClick="btnAddStaff_Click" Text="Add New Staff" />
         <asp:Label ID="Label2" runat="server" Text="(For admin use only)"></asp:Label>
     
     </div>

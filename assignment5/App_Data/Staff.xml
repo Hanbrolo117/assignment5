@@ -1,9 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Staffs>
-  <userName>
-    Banana
+  <user>
+    <userName>
+      Banana
+    </userName>
     <password>
-      12345 (this will have to be hashed later)
+      12345
     </password>
-  </userName>
+  </user>
+  <user>
+    <userName>
+      Apple
+    </userName>
+    <password>
+      12345
+    </password>
+  </user>
+  <user>
+    <userName>
+      Wut
+    </userName>
+    <password>
+      12345
+    </password>
+  </user>
 </Staffs>
