@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace assignment5
 {
-    public partial class StaffLogin : System.Web.UI.Page
+    public partial class signInControl : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -11,7 +11,7 @@ namespace assignment5
 {
 
 
-    public partial class StaffLogin
+    public partial class signInControl
     {
     }
 }
