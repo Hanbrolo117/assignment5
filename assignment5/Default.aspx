@@ -7,6 +7,5 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <uc1:signin runat="server" id="signIn" />    
-    <asp:Label ID="lor" runat="server" Text="Waiting for event to happen." style="margin-right:10px;"></asp:Label>
+
 </asp:Content>

@@ -111,6 +111,7 @@
     <None Include="Member\Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Register.ascx" />
     <Content Include="signIn.ascx" />
     <Content Include="tryit_pages\Signin_UserControl_Tryit.aspx" />
     <Content Include="StaffLogin.aspx" />
@@ -176,6 +177,13 @@
       <DependentUpon>Member.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.ascx.cs">
+      <DependentUpon>Register.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.ascx.designer.cs">
+      <DependentUpon>Register.ascx</DependentUpon>
+    </Compile>
     <Compile Include="signIn.ascx.cs">
       <DependentUpon>signIn.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -214,6 +222,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ourLibrary\ourLibrary.csproj">
+      <Project>{4190eed5-1393-4768-bc43-3e070632b3a1}</Project>
+      <Name>ourLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -11,7 +11,8 @@ namespace assignment5
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            this.signIn.subscribeToLoginButton(this.LoginHandler);
+            this.signIn.subscribeToRegisterButton(this.RegisterHandler);
         }
 
         public void LoginHandler(string username, string password, EventArgs e)
