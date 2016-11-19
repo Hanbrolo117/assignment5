@@ -13,14 +13,8 @@ namespace assignment5.Protected
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
-        }
-
-        protected void btnAddStaff_Click(object sender, EventArgs e)
-        {
-            //Response.Redirect("StaffRegister.aspx");
             FileStream fs = null;
-            string fLocation = Path.Combine(HttpRuntime.AppDomainAppPath, @"App_Data\Member.xml");
+            string fLocation = Path.Combine(HttpRuntime.AppDomainAppPath, @"App_Data\Staff.xml");
             try
             {
                 if (File.Exists(fLocation))
@@ -29,11 +23,12 @@ namespace assignment5.Protected
                     XmlDocument xd = new XmlDocument();
                     xd.Load(fs);
                     fs.Close();
-                    XmlNode node = xd;
+                    XmlNode node = xd["Staffs"];
                     XmlNodeList children = node.ChildNodes;
+
                     foreach (XmlNode child in children)
                     {
-                        txtStaffs.Text += child.InnerText + "\n";
+                        txtStaffs.Text += child["userName"].InnerText + "\n";
                     }
                 }
             }
@@ -41,6 +36,11 @@ namespace assignment5.Protected
             {
                 fs.Close();
             }
+        }
+
+        protected void btnAddStaff_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("StaffRegister.aspx");
         }
     }
 }

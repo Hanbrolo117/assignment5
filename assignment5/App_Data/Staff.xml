@@ -1,27 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Staffs>
+<Members>
   <user>
-    <userName>
-      Banana
-    </userName>
-    <password>
-      12345
-    </password>
+    <userName>Banana</userName>
+    <password>12345</password>
   </user>
   <user>
-    <userName>
-      Apple
-    </userName>
-    <password>
-      12345
-    </password>
+    <userName>Apple</userName>
+    <password>12345</password>
   </user>
   <user>
-    <userName>
-      Wut
-    </userName>
-    <password>
-      12345
-    </password>
+    <userName>Wut</userName>
+    <password>12345</password>
   </user>
-</Staffs>
+</Members>
