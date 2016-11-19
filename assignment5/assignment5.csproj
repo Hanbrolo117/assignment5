@@ -100,10 +100,9 @@
     <Content Include="MemberLogin.aspx" />
     <Content Include="Member\Member.aspx" />
     <Content Include="packages.config" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Member\Web.config">
+      <SubType>Designer</SubType>
     </Content>
-    <Content Include="Member\Web.config" />
     <None Include="Member\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
