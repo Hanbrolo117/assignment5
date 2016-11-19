@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
 using System.IO;
+using System.Xml;
 
 namespace ourLibrary
 {
-    // Example class
      public class Crypto 
      {
         private byte[] key;
@@ -129,6 +129,45 @@ namespace ourLibrary
             //------------------------------------------------------------------------------------------------------------------
 
         }//END OF DECRYPTION FUNCTION.
-    } 
+    }
+
+    public class XMLProccess
+    {
+        //return array of string. First element will be "Error" if error occur
+        public static string[] getUserList(string XMLPath)
+        {
+            string[] ret;
+            FileStream fs = null;
+            string fLocation = XMLPath;
+            try
+            {
+                if (File.Exists(fLocation))
+                {
+                    fs = new FileStream(fLocation, FileMode.Open, FileAccess.Read);
+                    XmlDocument xd = new XmlDocument();
+                    xd.Load(fs);
+                    fs.Close();
+                    XmlNode node = xd["Staffs"];
+                    XmlNodeList children = node.ChildNodes;
+                    ret = new string[children.Count];
+                    int i = 0;
+
+                    foreach (XmlNode child in children)
+                    {
+                        ret[i] = child["userName"].InnerText;
+                        i++;
+                    }
+                    return ret;
+                }
+            }
+            finally
+            {
+                fs.Close();
+            }
+            ret = new string[1];
+            ret[1] = "Error";
+            return ret;
+        }
+    }
 
 }
