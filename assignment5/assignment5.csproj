@@ -112,6 +112,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="signIn.ascx" />
+    <Content Include="tryit_pages\Signin_UserControl_Tryit.aspx" />
     <Content Include="StaffLogin.aspx" />
     <Content Include="StaffRegister.aspx" />
     <Content Include="Staff\Web.config" />
@@ -181,6 +182,13 @@
     </Compile>
     <Compile Include="signIn.ascx.designer.cs">
       <DependentUpon>signIn.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="tryit_pages\Signin_UserControl_Tryit.aspx.cs">
+      <DependentUpon>Signin_UserControl_Tryit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tryit_pages\Signin_UserControl_Tryit.aspx.designer.cs">
+      <DependentUpon>Signin_UserControl_Tryit.aspx</DependentUpon>
     </Compile>
     <Compile Include="StaffLogin.aspx.cs">
       <DependentUpon>StaffLogin.aspx</DependentUpon>
