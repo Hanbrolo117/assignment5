@@ -11,23 +11,5 @@ namespace assignment5 {
     
     
     public partial class Default {
-        
-        /// <summary>
-        /// signIn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::assignment5.signIn signIn;
-        
-        /// <summary>
-        /// lor control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lor;
     }
 }
