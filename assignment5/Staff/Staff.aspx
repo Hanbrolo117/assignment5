@@ -10,6 +10,13 @@
     <form id="form1" runat="server">
     <div>
     
+        <asp:Label ID="Label1" runat="server" Text="Staff user list:"></asp:Label>
+        <br />
+        <asp:TextBox ID="TextBox1" runat="server" Height="146px" ReadOnly="True" TextMode="MultiLine" Width="116px"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Button1" runat="server" Text="Add New Staff" />
+        <asp:Label ID="Label2" runat="server" Text="(For admin use only)"></asp:Label>
+    
     </div>
     </form>
 </body>

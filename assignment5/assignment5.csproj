@@ -104,7 +104,6 @@
     <Content Include="Member\Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Member\Web.config" />
     <Content Include="masterPage.Master" />
     <None Include="Member\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
