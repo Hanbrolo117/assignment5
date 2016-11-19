@@ -114,6 +114,7 @@
     <Content Include="registerControl.ascx" />
     <Content Include="signInControl.ascx" />
     <Content Include="StaffLogin.aspx" />
+    <Content Include="StaffRegister.aspx" />
     <Content Include="Staff\Web.config" />
     <None Include="Staff\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -195,6 +196,13 @@
     </Compile>
     <Compile Include="StaffLogin.aspx.designer.cs">
       <DependentUpon>StaffLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StaffRegister.aspx.cs">
+      <DependentUpon>StaffRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StaffRegister.aspx.designer.cs">
+      <DependentUpon>StaffRegister.aspx</DependentUpon>
     </Compile>
     <Compile Include="Staff\Staff.aspx.cs">
       <DependentUpon>Staff.aspx</DependentUpon>
