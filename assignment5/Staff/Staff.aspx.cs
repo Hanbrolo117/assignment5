@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
 using System.IO;
+using ourLibrary;
 
 namespace assignment5.Protected
 {
@@ -13,28 +14,12 @@ namespace assignment5.Protected
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            FileStream fs = null;
+            string[] list;
             string fLocation = Path.Combine(HttpRuntime.AppDomainAppPath, @"App_Data\Staff.xml");
-            try
+            list = XMLProccess.getUserList(fLocation);
+            for(int i = 0; i < list.Length; i++)
             {
-                if (File.Exists(fLocation))
-                {
-                    fs = new FileStream(fLocation, FileMode.Open, FileAccess.Read);
-                    XmlDocument xd = new XmlDocument();
-                    xd.Load(fs);
-                    fs.Close();
-                    XmlNode node = xd["Staffs"];
-                    XmlNodeList children = node.ChildNodes;
-
-                    foreach (XmlNode child in children)
-                    {
-                        txtStaffs.Text += child["userName"].InnerText + "\n";
-                    }
-                }
-            }
-            finally
-            {
-                fs.Close();
+                txtStaffs.Text += (list[i] + "\n");
             }
         }
 

@@ -134,7 +134,7 @@ namespace ourLibrary
     public class XMLProccess
     {
         //return array of string. First element will be "Error" if error occur
-        public string[] getUserList(string XMLPath)
+        public static string[] getUserList(string XMLPath)
         {
             string[] ret;
             FileStream fs = null;
@@ -150,10 +150,10 @@ namespace ourLibrary
                     XmlNode node = xd["Staffs"];
                     XmlNodeList children = node.ChildNodes;
                     ret = new string[children.Count];
+                    int i = 0;
 
                     foreach (XmlNode child in children)
                     {
-                        int i = 0;
                         ret[i] = child["userName"].InnerText;
                         i++;
                     }

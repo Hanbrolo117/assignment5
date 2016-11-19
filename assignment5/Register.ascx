@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Register.ascx.cs" Inherits="assignment5.Register" %>
 
-    <h3>Login</h3>
+    <h3>Register</h3>
     <hr />
 
     <asp:Label ID="username_label" runat="server" Text="Login:" style="margin-right:10px;"></asp:Label>
