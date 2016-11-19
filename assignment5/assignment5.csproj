@@ -112,8 +112,6 @@
     <None Include="Member\Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="registerControl.ascx" />
-    <Content Include="signInControl.ascx" />
     <Content Include="StaffLogin.aspx" />
     <Content Include="Staff\Web.config" />
     <None Include="Staff\Web.Debug.config">
@@ -176,20 +174,6 @@
       <DependentUpon>Member.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="registerControl.ascx.cs">
-      <DependentUpon>registerControl.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="registerControl.ascx.designer.cs">
-      <DependentUpon>registerControl.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="signInControl.ascx.cs">
-      <DependentUpon>signInControl.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="signInControl.ascx.designer.cs">
-      <DependentUpon>signInControl.ascx</DependentUpon>
-    </Compile>
     <Compile Include="StaffLogin.aspx.cs">
       <DependentUpon>StaffLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
