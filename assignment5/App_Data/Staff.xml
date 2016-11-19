@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Members>
+<Staffs>
   <user>
     <userName>Banana</userName>
     <password>12345</password>
@@ -12,4 +12,4 @@
     <userName>Wut</userName>
     <password>12345</password>
   </user>
-</Members>
+</Staffs>
