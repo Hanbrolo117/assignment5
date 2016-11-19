@@ -67,15 +67,6 @@ namespace assignment5 {
         protected global::System.Web.UI.WebControls.TextBox password_confirm_input;
         
         /// <summary>
-        /// login_event control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button login_event;
-        
-        /// <summary>
         /// register_event control.
         /// </summary>
         /// <remarks>
