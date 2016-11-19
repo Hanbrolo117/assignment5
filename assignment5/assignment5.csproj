@@ -101,27 +101,11 @@
     <Content Include="MemberRegister.aspx" />
     <Content Include="Member\Member.aspx" />
     <Content Include="packages.config" />
-    <Content Include="Member\Web.config">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="masterPage.Master" />
-    <None Include="Member\Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Member\Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
     <Content Include="signIn.ascx" />
     <Content Include="tryit_pages\Signin_UserControl_Tryit.aspx" />
     <Content Include="StaffLogin.aspx" />
     <Content Include="StaffRegister.aspx" />
-    <Content Include="Staff\Web.config" />
-    <None Include="Staff\Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Staff\Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
